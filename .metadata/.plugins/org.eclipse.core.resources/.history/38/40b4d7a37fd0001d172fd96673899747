@@ -1,0 +1,16 @@
+import model.Student;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 1, 2023
+ * @version 1.0
+*/
+
+public class GenericClass {
+	public static void main(String[] args) {
+		DataAccess<Student> dataAccess = new DataAccess<>();
+		dataAccess.update(dataAccess);
+	}
+}

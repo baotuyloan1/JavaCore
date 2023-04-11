@@ -1,0 +1,20 @@
+import java.util.Comparator;
+
+import model.Student;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 1, 2023
+ * @version 1.0
+*/
+
+public class StudentComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		return o1.getName().compareTo(o2.getName());
+	}
+
+}

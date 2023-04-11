@@ -1,0 +1,25 @@
+import java.util.List;
+
+import model.Student;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 1, 2023
+ * @version 1.0
+*/
+
+public class Management {
+	
+	public void manage(List<Student> studentList, Student student) {
+		if (studentList == null){
+			return;
+		}
+		studentList.add(student);
+		System.out.println(studentList);
+	}
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,21 @@
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Mar 29, 2023
+ * @version 1.0
+*/
+
+public class StringBufferAndStringBuilder {
+	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Fresher ");
+		sb.append("Academy");
+		System.out.println(sb.toString());
+		
+		StringBuffer sbu = new StringBuffer();
+		sbu.append("Hi ");
+		sbu.append("Bao");
+		System.out.println(sbu.toString());
+	}
+}

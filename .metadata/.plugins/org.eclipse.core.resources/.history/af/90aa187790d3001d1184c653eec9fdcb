@@ -1,0 +1,36 @@
+/*
+* (C) Copyright 2023 Baokey
+*
+* @author BAO
+* @date Apr 5, 2023
+* @version 1.0
+*/
+
+public class Interruption {
+
+	public static void main(String[] args) {
+		BankingThread bt = new BankingThread();
+		bt.setName("FA");
+		bt.start();
+	}
+}
+
+class BankingThread extends Thread {
+
+	@Override
+	public void run() {
+		int count = 0;
+		while (count++ < 5) {
+			try {
+				Thread.sleep(1000);
+				if (count == 3) {
+					this.interrupt();
+					System.out.println("Hello");
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			System.out.format("Bank Thread %s is running %d\n", this.getName(), count);
+		}
+	}
+}

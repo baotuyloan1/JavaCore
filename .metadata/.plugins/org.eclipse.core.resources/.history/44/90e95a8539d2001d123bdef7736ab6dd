@@ -1,0 +1,32 @@
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 3, 2023
+ * @version 1.0
+*/
+
+public class ThreadSample {
+	public static void main(String[] args) {
+		CustomerThread ct = new CustomerThread();
+		ct.start();
+	}
+}
+
+class CustomerThread extends Thread {
+	@Override
+	public void run() {
+		int count = 0;
+		while (count++ < 5) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+
+		System.out.println("Customer Thread is running");
+	}
+}

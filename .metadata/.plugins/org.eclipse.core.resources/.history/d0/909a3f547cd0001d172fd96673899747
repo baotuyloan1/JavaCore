@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Student;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 1, 2023
+ * @version 1.0
+*/
+
+public class Management {
+	
+	public <T> void manage(List<T> studentList, T student) {
+		if (studentList == null){
+			return;
+		}
+		studentList.add(student);
+		System.out.println(studentList);
+	}
+	public static void main(String[] args) {
+		Management management = new Management();
+		List<Student> studentList = new ArrayList<>();
+		studentList.add(new Student("Academy",6));
+		studentList.add(new Student("Fresher",8));
+		studentList.add(new Student("Key",5));
+		management.manage(studentList, new Student("Victor",4));
+	}
+}

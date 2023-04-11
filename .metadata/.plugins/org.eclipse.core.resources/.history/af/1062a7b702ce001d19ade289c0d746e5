@@ -1,0 +1,30 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Mar 29, 2023
+ * @version 1.0
+*/
+// java 8
+public class LocalXXX {
+public static void main(String[] args) {
+	LocalDate ld = LocalDate.now();
+	System.out.println(ld);
+//	2023-03-29
+	
+	LocalTime lt = LocalTime.now();
+	System.out.println(lt);
+//	14:12:31.511060300
+	
+	LocalDateTime ldt = LocalDateTime.now();
+	System.out.println(ldt);
+//	2023-03-29T14:22:16.273613100
+	
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+}
+}

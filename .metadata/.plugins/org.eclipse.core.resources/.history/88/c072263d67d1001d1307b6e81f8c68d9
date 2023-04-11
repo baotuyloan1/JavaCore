@@ -1,0 +1,21 @@
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 2, 2023
+ * @version 1.0
+*/
+package edu.fa;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class CharacterStreamSample {
+	public static void main(String[] args) {
+		FileReader fr = null;
+		FileWriter fw = null;
+
+		fr = new FileReader("D:/data/input.txt");
+		fw = new FileWriter("D:/data/output.txt");
+	}
+}

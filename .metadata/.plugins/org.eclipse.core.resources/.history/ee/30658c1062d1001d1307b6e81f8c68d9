@@ -1,0 +1,11 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int i = 4;
+		for (i = 4, y = 3; i < 0; i++) {
+		}
+	}
+
+}

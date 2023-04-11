@@ -1,0 +1,21 @@
+import java.util.HashSet;
+import java.util.Set;
+
+import model.Student;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 1, 2023
+ * @version 1.0
+*/
+
+public class Duplication {
+	public static void main(String[] args) {
+		Set<Student> studentSet = new HashSet<>();
+		studentSet.add(new Student("Chicken", 9));
+		studentSet.add(new Student("Hugo", 7));
+		studentSet.add(new Student("Baokey", 6));
+	}
+}

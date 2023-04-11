@@ -1,0 +1,17 @@
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 2, 2023
+ * @version 1.0
+*/
+
+public class Employee {
+	public void work () {
+		
+	}
+	
+	public void work(String location) {
+		
+	}
+}

@@ -1,0 +1,16 @@
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 2, 2023
+ * @version 1.0
+*/
+package edu.fa;
+
+import java.io.File;
+
+public class FileSample {
+	public static void main(String[] args) {
+		File file = new File("");
+	}
+}

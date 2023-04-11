@@ -1,0 +1,37 @@
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 3, 2023
+ * @version 1.0
+*/
+
+public class FileSample {
+
+	public static void main(String[] args) throws IOException {
+		Path path = Paths.get("D:/data/students");
+		Files.createDirectories(path);
+
+		Path studentFile = Paths.get("D:/data/students.txt");
+		if (!Files.exists(studentFile)) {
+			Files.createFile(studentFile);
+		}else {
+			System.out.println("File is existed");
+		}
+		
+		
+		OutputStream out = null;
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

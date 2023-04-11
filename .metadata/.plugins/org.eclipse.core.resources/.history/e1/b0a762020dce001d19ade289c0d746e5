@@ -1,0 +1,14 @@
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Mar 29, 2023
+ * @version 1.0
+*/
+
+public class StringPool {
+	public static void main(String[] args) {
+		String s1 = "Fresher";
+		String s2 = "Fresher";
+	}
+}

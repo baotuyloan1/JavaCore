@@ -1,0 +1,71 @@
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Mar 29, 2023
+ * @version 1.0
+*/
+// java 8
+public class LocalXXX {
+	public static void main(String[] args) {
+		LocalDate ld = LocalDate.now();
+		System.out.println(ld);
+//	2023-03-29
+
+		LocalTime lt = LocalTime.now();
+		System.out.println(lt);
+//	14:12:31.511060300
+
+		LocalDateTime ldt = LocalDateTime.now();
+		System.out.println(ldt);
+//	2023-03-29T14:22:16.273613100
+
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		System.out.println(ld.format(dtf));
+//	29-03-2023
+		System.out.println(ldt.format(dtf));
+//	29-03-2023
+
+//	Convert string to date
+		String strDate = "20-03-2023";
+		System.out.println(LocalDate.parse(strDate, dtf));
+
+//	Get month
+		System.out.println(ld.getMonth());
+//	MARCH
+
+//	Get month number format
+		System.out.println(ld.getMonth().getValue());
+		System.out.println(ld.getMonthValue());
+//	3
+
+//		Khoan thoi gian
+		Period period = Period.ofDays(5);
+		LocalDate newLD = ld.plus(period);
+		System.out.println(newLD);
+//		2023-04-03
+		System.out.println(ldt.plus(period));
+//		2023-04-03T14:51:10.373150400
+
+//		add 3 years, 5 months, 1day
+		period = Period.of(3, 2, 1);
+		System.out.println(ld.plus(period));
+
+		Duration duration = Duration.ofHours(1);
+		LocalTime newLt = lt.minus(duration);
+		System.out.println(newLt);
+		
+		ZoneId zone = ZoneId.of("Asia/Bangkok");
+		ZonedDateTime zdt = ZonedDateTime.of(ldt, zone);
+		System.out.println(zdt);
+	}
+}

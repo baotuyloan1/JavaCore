@@ -1,0 +1,23 @@
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 2, 2023
+ * @version 1.0
+*/
+package edu.fa;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class ByteStreamSample {
+	public static void main(String[] args) throws FileNotFoundException {
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+		
+		fis = new FileInputStream("D:/data/input.txt");
+		fos = new FileOutputStream("D:/data/output.txt");
+		
+	}
+}

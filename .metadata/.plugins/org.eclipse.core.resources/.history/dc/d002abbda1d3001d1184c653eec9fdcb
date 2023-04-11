@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 5, 2023
+ * @version 1.0
+*/
+
+public class Management {
+	public static void main(String[] args) {
+		Enrollment enrollment = new Enrollment(new ArrayList<>());
+	}
+}

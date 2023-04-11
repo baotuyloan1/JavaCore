@@ -1,0 +1,19 @@
+import model.Student;
+
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 1, 2023
+ * @version 1.0
+*/
+
+public class DataAccess<T> {
+	public<T> void save(T t) {
+		System.out.println(t);
+	}
+	
+	public void update(T t) {
+		System.out.println(t);
+	}
+}

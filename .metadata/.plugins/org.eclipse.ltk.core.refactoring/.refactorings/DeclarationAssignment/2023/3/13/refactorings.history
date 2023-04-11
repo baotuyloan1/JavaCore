@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;VảiableInitialization&apos; to &apos;VariableInitialization&apos;&#x0D;&#x0A;- Original project: &apos;DeclarationAssignment&apos;&#x0D;&#x0A;- Original element: &apos;VảiableInitialization&apos;&#x0D;&#x0A;- Renamed element: &apos;VariableInitialization&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;VảiableInitialization&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{VảiableInitialization.java[VảiableInitialization" matchStrategy="1" name="VariableInitialization" qualified="false" references="true" similarDeclarations="false" stamp="1679911206517" textual="false" version="1.0"/>
+</session>

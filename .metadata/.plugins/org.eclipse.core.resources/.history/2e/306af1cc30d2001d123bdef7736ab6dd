@@ -1,0 +1,13 @@
+/*
+ * (C) Copyright 2023 Baokey
+ *
+ * @author BAO
+ * @date Apr 3, 2023
+ * @version 1.0
+*/
+
+public class PathSample {
+	public static void main(String[] args) {
+		
+	}
+}
